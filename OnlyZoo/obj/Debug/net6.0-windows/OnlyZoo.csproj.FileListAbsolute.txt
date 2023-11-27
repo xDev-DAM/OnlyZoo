@@ -1,0 +1,17 @@
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\bin\Debug\net6.0-windows\OnlyZoo.exe
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\bin\Debug\net6.0-windows\OnlyZoo.deps.json
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\bin\Debug\net6.0-windows\OnlyZoo.runtimeconfig.json
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\bin\Debug\net6.0-windows\OnlyZoo.dll
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\bin\Debug\net6.0-windows\OnlyZoo.pdb
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.Catalogo.resources
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.Properties.Resources.resources
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.csproj.GenerateResource.cache
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.AssemblyInfoInputs.cache
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.AssemblyInfo.cs
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.csproj.CoreCompileInputs.cache
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.dll
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\refint\OnlyZoo.dll
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.pdb
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\OnlyZoo.genruntimeconfig.cache
+C:\Users\Vespertino\source\repos\OnlyZoo\OnlyZoo\obj\Debug\net6.0-windows\ref\OnlyZoo.dll
