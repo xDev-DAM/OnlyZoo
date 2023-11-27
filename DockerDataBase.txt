@@ -1,0 +1,21 @@
+docker pull mysql
+
+docker volume create OnlyZoo
+
+docker run --name mysql_OnlyZoo -v OnlyZoo:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=OnlyZoo -d -p 6969:3306 mysql
+
+docker cp tuRuta/CreacionOnlyFansZoo.sql mysql_OnlyZoo:/var/lib/mysql
+
+docker exec -it mysql_OnlyZoo bash
+
+mysql -u root -p
+
+OnlyZoo
+
+source /var/lib/mysql/CreacionOnlyFansZoo.sql
+
+
+
+
+
+
