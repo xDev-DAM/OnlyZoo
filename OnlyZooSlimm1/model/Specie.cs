@@ -8,8 +8,8 @@ namespace OnlyZoo.model
 {
     internal class Specie
     {
-        private int Id { get; set; }
-        private string Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
 
         public Specie(int id, string name) {
             this.Id = id;
