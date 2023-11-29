@@ -26,7 +26,6 @@ CREATE TABLE especie(
 CREATE TABLE producto(
 	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	nombre VARCHAR(255),
-	ALIAS VARCHAR(255),
 	descripcion VARCHAR(255),
 	id_especie INT, stock INT, 
 	precio DECIMAL(10, 2),
