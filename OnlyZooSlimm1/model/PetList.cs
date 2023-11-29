@@ -8,7 +8,7 @@ namespace OnlyZoo.model
 {
     internal class PetList
     {
-        public List<Pet> Pets { get; set;}
+        private List<Pet> Pets { get; set;}
 
         public PetList(List<Pet> Pets) {
             this.Pets = Pets;

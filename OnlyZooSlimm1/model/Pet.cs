@@ -8,21 +8,23 @@ namespace OnlyZoo.model
 {
     internal class Pet
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Breed { get; set; }
-        public string Description { get; set; }
-        public Specie PetSpecie { get; set; }
-        public int Stock { get; set; }
-        public double Prize { get; set; }
+        private int Id { get; set; }
+        private string Name { get; set; }
+        private string Breed { get; set; }
+        private string Description { get; set; }
+        private Specie PetSpecie { get; set; }
+        private int Stock { get; set; }
+        private string Image { get; set; }
+        private double Prize { get; set; }
         
-        public Pet(int Id, string Name, string Breed, string Description, Specie PetSpecie,int stock, double Prize ) {
+        public Pet(int Id, string Name, string Breed, string Description, Specie PetSpecie,int stock,string Image, double Prize ) {
             this.Id = Id;
             this.Name = Name;
             this.Breed = Breed;
             this.Description = Description;
             this.PetSpecie = PetSpecie;
             this.Stock = Stock;
+            this.Image = Image;
             this.Prize = Prize;
         }
 

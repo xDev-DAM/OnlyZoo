@@ -8,7 +8,7 @@ namespace OnlyZoo.model
 {
     internal class ProductList
     {
-        public List<Product> Products { get; set; }
+        private List<Product> Products { get; set; }
         public ProductList(List<Product> Products) { 
             this.Products = Products;
             if (this.Products == null) {

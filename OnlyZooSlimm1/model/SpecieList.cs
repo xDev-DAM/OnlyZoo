@@ -9,7 +9,7 @@ namespace OnlyZoo.model
     internal class SpecieList
     {
 
-        public List<Specie> Species;
+        private List<Specie> Species;
 
         public SpecieList(List<Specie> Species) { 
             this.Species = Species;
