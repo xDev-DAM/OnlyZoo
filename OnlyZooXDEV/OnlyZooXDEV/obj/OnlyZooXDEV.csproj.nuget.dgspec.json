@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "H:\\DAMGS2GuillermoDeCarlosMunoz\\DesInterfaces\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj": {}
+    "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj": {}
   },
   "projects": {
-    "H:\\DAMGS2GuillermoDeCarlosMunoz\\DesInterfaces\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj": {
+    "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\DAMGS2GuillermoDeCarlosMunoz\\DesInterfaces\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
+        "projectUniqueName": "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
         "projectName": "OnlyZooXDEV",
-        "projectPath": "H:\\DAMGS2GuillermoDeCarlosMunoz\\DesInterfaces\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
+        "projectPath": "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
         "packagesPath": "C:\\Users\\Vespertino\\.nuget\\packages\\",
-        "outputPath": "H:\\DAMGS2GuillermoDeCarlosMunoz\\DesInterfaces\\OnlyZooXDEV\\OnlyZooXDEV\\obj\\",
+        "outputPath": "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Vespertino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
