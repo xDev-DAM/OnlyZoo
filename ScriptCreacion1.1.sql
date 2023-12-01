@@ -5,7 +5,7 @@ USE OnlyZoo;
 CREATE TABLE usuario (
 	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	nombre VARCHAR(255),
-	contraseÃ±a VARCHAR(255),
+	contrasena VARCHAR(255),
 	ALIAS VARCHAR(255),
 	email VARCHAR(255),
 	imagen VARCHAR(255));
