@@ -8,7 +8,7 @@ namespace OnlyZoo.model
 {
     internal class Pet
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
         private string Name { get; set; }
         private string Breed { get; set; }
         private string Description { get; set; }
