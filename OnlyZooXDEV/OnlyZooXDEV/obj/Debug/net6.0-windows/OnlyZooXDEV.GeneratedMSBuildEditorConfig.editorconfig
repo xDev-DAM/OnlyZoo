@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlyZooXDEV
-build_property.ProjectDir = E:\DAM2023\INTERFACES\VisualProjects\XDEV\OnlyZoo\OnlyZooXDEV\OnlyZooXDEV\
+build_property.ProjectDir = H:\DAM2023\INTERFACES\VisualProjects\OnlyZoo\OnlyZooXDEV\OnlyZooXDEV\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

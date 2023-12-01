@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnlyZooXDEV.utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,21 +16,32 @@ namespace OnlyZooXDEV
         public MainWindow()
         {
             InitializeComponent();
+            InitializeEvents();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
+        private void InitializeEvents() {
+            this.Load -= new System.EventHandler(LoadForm);
 
+            this.Load += new System.EventHandler(LoadForm);
         }
 
-        private void BotSeparatorLabel_Click(object sender, EventArgs e)
+        private void LoadForm(object? sender, EventArgs e)
         {
-
+            LoadFonts(new FontManager());
+            LoadColors();
         }
 
-        private void TopSeparatorPanel_Paint(object sender, PaintEventArgs e)
-        {
+        private void LoadFonts(FontManager f) {
+            this.OnlyZooLabel.Font = f.OnlyZooFont();
+            this.TitleLabel.Font = f.TitleFont();
+            this.SearchLabel.Font = f.SmallFont();
+            this.FilterLabel.Font = f.SmallFont();
+        }
 
+        private void LoadColors() {
+            this.TopPanel.BackColor = ColorManager.GetPaletteColor1();
+            this.MainPanel.BackColor = ColorManager.GetPaletteColor3();
+            this.MainBotPanel.BackColor = ColorManager.GetPaletteColor1();  
         }
     }
 }
