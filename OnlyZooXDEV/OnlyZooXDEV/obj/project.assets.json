@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
+      "projectUniqueName": "H:\\DAM2023\\INTERFACES\\VisualProjects\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
       "projectName": "OnlyZooXDEV",
-      "projectPath": "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
+      "projectPath": "H:\\DAM2023\\INTERFACES\\VisualProjects\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\OnlyZooXDEV.csproj",
       "packagesPath": "C:\\Users\\Vespertino\\.nuget\\packages\\",
-      "outputPath": "H:\\DAM2023\\INTERFACES\\VisualProjects\\deleteme\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\obj\\",
+      "outputPath": "H:\\DAM2023\\INTERFACES\\VisualProjects\\OnlyZoo\\OnlyZooXDEV\\OnlyZooXDEV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
