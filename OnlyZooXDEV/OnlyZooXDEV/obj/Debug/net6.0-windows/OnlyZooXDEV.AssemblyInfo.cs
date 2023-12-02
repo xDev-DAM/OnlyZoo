@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlyZooXDEV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67c3fdaa293af644bad6dfc2e172d0ff8a28d470")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlyZooXDEV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlyZooXDEV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
