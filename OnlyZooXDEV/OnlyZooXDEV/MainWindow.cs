@@ -19,7 +19,8 @@ namespace OnlyZooXDEV
             InitializeEvents();
         }
 
-        private void InitializeEvents() {
+        private void InitializeEvents()
+        {
             this.Load -= new System.EventHandler(LoadForm);
 
             this.Load += new System.EventHandler(LoadForm);
@@ -31,17 +32,29 @@ namespace OnlyZooXDEV
             LoadColors();
         }
 
-        private void LoadFonts(FontManager f) {
+        private void LoadFonts(FontManager f)
+        {
             this.OnlyZooLabel.Font = f.OnlyZooFont();
             this.TitleLabel.Font = f.TitleFont();
             this.SearchLabel.Font = f.SmallFont();
             this.FilterLabel.Font = f.SmallFont();
+            this.CopyRightLabel.Font = f.SmallFont();
         }
 
-        private void LoadColors() {
+        private void LoadColors()
+        {
             this.TopPanel.BackColor = ColorManager.GetPaletteColor1();
+            this.ProductsButton.BackColor = Color.White;
+            this.PetButton.BackColor = Color.White;
+            this.MerchButton.BackColor = Color.White;
+            this.FeaturedButton.BackColor = Color.White;
+            this.SearchButton.BackColor = Color.White;
+            this.ProfileButton.BackColor = Color.White;
+            this.PrizeFilter.BackColor = Color.White;
+            this.StockFilter.BackColor = Color.White;
+            this.SpecieFilter.BackColor = Color.White;
             this.MainPanel.BackColor = ColorManager.GetPaletteColor3();
-            this.MainBotPanel.BackColor = ColorManager.GetPaletteColor1();  
+            this.MainBotPanel.BackColor = ColorManager.GetPaletteColor1();
         }
     }
 }
