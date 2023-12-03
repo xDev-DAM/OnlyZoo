@@ -31,12 +31,13 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             TopPanel = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            TopTitlePanel = new TableLayoutPanel();
             OnlyZooLabel = new Label();
             TopLeftPanel = new FlowLayoutPanel();
             ProductsButton = new Button();
             PetButton = new Button();
             MerchButton = new Button();
+            FeaturedButton = new Button();
             TopRightPanel = new FlowLayoutPanel();
             ProfileButton = new Button();
             BotSeparatorLabel = new Label();
@@ -64,8 +65,9 @@
             MainBotPanel = new FlowLayoutPanel();
             LogoXdev = new PictureBox();
             OnlyZooLogo = new PictureBox();
+            CopyRightLabel = new Label();
             TopPanel.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            TopTitlePanel.SuspendLayout();
             TopLeftPanel.SuspendLayout();
             TopRightPanel.SuspendLayout();
             MainPanel.SuspendLayout();
@@ -82,35 +84,35 @@
             // 
             // TopPanel
             // 
-            TopPanel.Controls.Add(tableLayoutPanel1);
+            TopPanel.Controls.Add(TopTitlePanel);
             TopPanel.Controls.Add(TopLeftPanel);
             TopPanel.Controls.Add(TopRightPanel);
             TopPanel.Dock = DockStyle.Top;
             TopPanel.Location = new Point(0, 0);
             TopPanel.Name = "TopPanel";
-            TopPanel.Size = new Size(869, 57);
+            TopPanel.Size = new Size(1380, 57);
             TopPanel.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // TopTitlePanel
             // 
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40.5333328F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 59.4666672F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 176F));
-            tableLayoutPanel1.Controls.Add(OnlyZooLabel, 1, 0);
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(253, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 47.4576263F));
-            tableLayoutPanel1.Size = new Size(552, 57);
-            tableLayoutPanel1.TabIndex = 2;
+            TopTitlePanel.ColumnCount = 3;
+            TopTitlePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 37.0445328F));
+            TopTitlePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 62.9554672F));
+            TopTitlePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 176F));
+            TopTitlePanel.Controls.Add(OnlyZooLabel, 1, 0);
+            TopTitlePanel.Dock = DockStyle.Fill;
+            TopTitlePanel.Location = new Point(334, 0);
+            TopTitlePanel.Name = "TopTitlePanel";
+            TopTitlePanel.RowCount = 1;
+            TopTitlePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 47.4576263F));
+            TopTitlePanel.Size = new Size(982, 57);
+            TopTitlePanel.TabIndex = 2;
             // 
             // OnlyZooLabel
             // 
             OnlyZooLabel.AutoSize = true;
             OnlyZooLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Italic, GraphicsUnit.Point);
-            OnlyZooLabel.Location = new Point(155, 8);
+            OnlyZooLabel.Location = new Point(301, 8);
             OnlyZooLabel.Margin = new Padding(3, 8, 3, 0);
             OnlyZooLabel.Name = "OnlyZooLabel";
             OnlyZooLabel.Size = new Size(90, 30);
@@ -122,10 +124,11 @@
             TopLeftPanel.Controls.Add(ProductsButton);
             TopLeftPanel.Controls.Add(PetButton);
             TopLeftPanel.Controls.Add(MerchButton);
+            TopLeftPanel.Controls.Add(FeaturedButton);
             TopLeftPanel.Dock = DockStyle.Left;
             TopLeftPanel.Location = new Point(0, 0);
             TopLeftPanel.Name = "TopLeftPanel";
-            TopLeftPanel.Size = new Size(253, 57);
+            TopLeftPanel.Size = new Size(334, 57);
             TopLeftPanel.TabIndex = 1;
             // 
             // ProductsButton
@@ -158,12 +161,22 @@
             MerchButton.Text = "Merch";
             MerchButton.UseVisualStyleBackColor = true;
             // 
+            // FeaturedButton
+            // 
+            FeaturedButton.Location = new Point(251, 8);
+            FeaturedButton.Margin = new Padding(3, 8, 3, 3);
+            FeaturedButton.Name = "FeaturedButton";
+            FeaturedButton.Size = new Size(77, 41);
+            FeaturedButton.TabIndex = 3;
+            FeaturedButton.Text = "Destacados";
+            FeaturedButton.UseVisualStyleBackColor = true;
+            // 
             // TopRightPanel
             // 
             TopRightPanel.Controls.Add(ProfileButton);
             TopRightPanel.Dock = DockStyle.Right;
             TopRightPanel.FlowDirection = FlowDirection.RightToLeft;
-            TopRightPanel.Location = new Point(805, 0);
+            TopRightPanel.Location = new Point(1316, 0);
             TopRightPanel.Name = "TopRightPanel";
             TopRightPanel.Size = new Size(64, 57);
             TopRightPanel.TabIndex = 0;
@@ -194,7 +207,7 @@
             MainPanel.Dock = DockStyle.Fill;
             MainPanel.Location = new Point(0, 57);
             MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(869, 402);
+            MainPanel.Size = new Size(1380, 639);
             MainPanel.TabIndex = 2;
             // 
             // ItemContainer
@@ -202,7 +215,7 @@
             ItemContainer.Dock = DockStyle.Fill;
             ItemContainer.Location = new Point(0, 61);
             ItemContainer.Name = "ItemContainer";
-            ItemContainer.Size = new Size(865, 337);
+            ItemContainer.Size = new Size(1376, 574);
             ItemContainer.TabIndex = 1;
             // 
             // MainTopPanel
@@ -213,7 +226,7 @@
             MainTopPanel.Dock = DockStyle.Top;
             MainTopPanel.Location = new Point(0, 0);
             MainTopPanel.Name = "MainTopPanel";
-            MainTopPanel.Size = new Size(865, 61);
+            MainTopPanel.Size = new Size(1376, 61);
             MainTopPanel.TabIndex = 0;
             // 
             // TitlePanel
@@ -229,14 +242,14 @@
             TitlePanel.RowCount = 2;
             TitlePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 86.88525F));
             TitlePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 13.1147537F));
-            TitlePanel.Size = new Size(428, 61);
+            TitlePanel.Size = new Size(939, 61);
             TitlePanel.TabIndex = 21;
             // 
             // TitleLabel
             // 
             TitleLabel.AutoSize = true;
             TitleLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            TitleLabel.Location = new Point(160, 15);
+            TitleLabel.Location = new Point(368, 15);
             TitleLabel.Margin = new Padding(3, 15, 3, 0);
             TitleLabel.Name = "TitleLabel";
             TitleLabel.Size = new Size(152, 32);
@@ -299,7 +312,7 @@
             FilterPanel.Controls.Add(PrizeFilter, 1, 1);
             FilterPanel.Controls.Add(FilterLabel, 0, 0);
             FilterPanel.Dock = DockStyle.Right;
-            FilterPanel.Location = new Point(669, 0);
+            FilterPanel.Location = new Point(1180, 0);
             FilterPanel.Name = "FilterPanel";
             FilterPanel.RowCount = 2;
             FilterPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 49.18033F));
@@ -397,17 +410,18 @@
             MainBotPanel.BorderStyle = BorderStyle.FixedSingle;
             MainBotPanel.Controls.Add(LogoXdev);
             MainBotPanel.Controls.Add(OnlyZooLogo);
+            MainBotPanel.Controls.Add(CopyRightLabel);
             MainBotPanel.Dock = DockStyle.Bottom;
             MainBotPanel.FlowDirection = FlowDirection.RightToLeft;
-            MainBotPanel.Location = new Point(0, 400);
+            MainBotPanel.Location = new Point(0, 637);
             MainBotPanel.Name = "MainBotPanel";
-            MainBotPanel.Size = new Size(869, 59);
+            MainBotPanel.Size = new Size(1380, 59);
             MainBotPanel.TabIndex = 9;
             // 
             // LogoXdev
             // 
             LogoXdev.Image = (Image)resources.GetObject("LogoXdev.Image");
-            LogoXdev.Location = new Point(814, 3);
+            LogoXdev.Location = new Point(1325, 3);
             LogoXdev.Name = "LogoXdev";
             LogoXdev.Size = new Size(50, 51);
             LogoXdev.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -417,26 +431,36 @@
             // OnlyZooLogo
             // 
             OnlyZooLogo.Image = (Image)resources.GetObject("OnlyZooLogo.Image");
-            OnlyZooLogo.Location = new Point(753, 3);
+            OnlyZooLogo.Location = new Point(1264, 3);
             OnlyZooLogo.Name = "OnlyZooLogo";
             OnlyZooLogo.Size = new Size(55, 51);
             OnlyZooLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             OnlyZooLogo.TabIndex = 7;
             OnlyZooLogo.TabStop = false;
             // 
+            // CopyRightLabel
+            // 
+            CopyRightLabel.AutoSize = true;
+            CopyRightLabel.Location = new Point(334, 20);
+            CopyRightLabel.Margin = new Padding(3, 20, 10, 0);
+            CopyRightLabel.Name = "CopyRightLabel";
+            CopyRightLabel.Size = new Size(917, 15);
+            CopyRightLabel.TabIndex = 8;
+            CopyRightLabel.Text = "Esta aplicación ha sido desarrollada por el equipo de trabajo XDEV-DAMv2© con fines puramente académicos. Cualquier copia de software puede conllevar acciones legales.";
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(869, 459);
+            ClientSize = new Size(1380, 696);
             Controls.Add(MainBotPanel);
             Controls.Add(MainPanel);
             Controls.Add(TopPanel);
             Name = "MainWindow";
             Text = "MainWindow";
             TopPanel.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
+            TopTitlePanel.ResumeLayout(false);
+            TopTitlePanel.PerformLayout();
             TopLeftPanel.ResumeLayout(false);
             TopRightPanel.ResumeLayout(false);
             MainPanel.ResumeLayout(false);
@@ -451,6 +475,7 @@
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             MainBotPanel.ResumeLayout(false);
+            MainBotPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)LogoXdev).EndInit();
             ((System.ComponentModel.ISupportInitialize)OnlyZooLogo).EndInit();
             ResumeLayout(false);
@@ -484,7 +509,7 @@
         private Button MerchButton;
         private TableLayoutPanel TitlePanel;
         private Label TitleLabel;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel TopTitlePanel;
         private Label OnlyZooLabel;
         private Label BotSeparatorLabel;
         private BindingSource bindingSource1;
@@ -492,5 +517,7 @@
         private PictureBox LogoXdev;
         private PictureBox OnlyZooLogo;
         private FlowLayoutPanel ItemContainer;
+        private Label CopyRightLabel;
+        private Button FeaturedButton;
     }
 }

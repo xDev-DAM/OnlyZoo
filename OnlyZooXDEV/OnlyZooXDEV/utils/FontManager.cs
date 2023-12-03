@@ -27,7 +27,7 @@ namespace OnlyZooXDEV.utils
             }
             public Font SmallFont()
             {
-                return new Font(pfc.Families[1], 12);
+                return new Font(pfc.Families[1], 11);
             }
             public Font OnlyZooFont() {
                 return new Font(pfc.Families[0], 30);
