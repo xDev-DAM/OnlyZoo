@@ -127,6 +127,8 @@
             // 
             IniciarSesionButton.Anchor = AnchorStyles.None;
             IniciarSesionButton.BackColor = Color.White;
+            IniciarSesionButton.Cursor = Cursors.Hand;
+            IniciarSesionButton.FlatStyle = FlatStyle.Flat;
             IniciarSesionButton.Location = new Point(635, 8);
             IniciarSesionButton.Name = "IniciarSesionButton";
             IniciarSesionButton.Size = new Size(143, 41);
@@ -321,14 +323,14 @@
             TitlePanel.RowCount = 2;
             TitlePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 86.88525F));
             TitlePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 13.1147537F));
-            TitlePanel.Size = new Size(752, 61);
+            TitlePanel.Size = new Size(737, 61);
             TitlePanel.TabIndex = 21;
             // 
             // TitleLabel
             // 
             TitleLabel.AutoSize = true;
             TitleLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            TitleLabel.Location = new Point(292, 15);
+            TitleLabel.Location = new Point(286, 15);
             TitleLabel.Margin = new Padding(3, 15, 3, 0);
             TitleLabel.Name = "TitleLabel";
             TitleLabel.Size = new Size(152, 32);
@@ -387,18 +389,18 @@
             FilterPanel.ColumnCount = 3;
             FilterPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 52.7131767F));
             FilterPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 47.2868233F));
-            FilterPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 66F));
+            FilterPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 70F));
             FilterPanel.Controls.Add(StockFilter, 0, 1);
             FilterPanel.Controls.Add(SpecieFilter, 2, 1);
             FilterPanel.Controls.Add(PrizeFilter, 1, 1);
             FilterPanel.Controls.Add(FilterLabel, 0, 0);
             FilterPanel.Dock = DockStyle.Right;
-            FilterPanel.Location = new Point(993, 0);
+            FilterPanel.Location = new Point(978, 0);
             FilterPanel.Name = "FilterPanel";
             FilterPanel.RowCount = 2;
             FilterPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 49.18033F));
             FilterPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50.81967F));
-            FilterPanel.Size = new Size(196, 61);
+            FilterPanel.Size = new Size(211, 61);
             FilterPanel.TabIndex = 17;
             // 
             // StockFilter
@@ -416,10 +418,10 @@
             // 
             SpecieFilter.Cursor = Cursors.Hand;
             SpecieFilter.FlatStyle = FlatStyle.Flat;
-            SpecieFilter.Location = new Point(132, 33);
+            SpecieFilter.Location = new Point(143, 33);
             SpecieFilter.Margin = new Padding(3, 3, 10, 3);
             SpecieFilter.Name = "SpecieFilter";
-            SpecieFilter.Size = new Size(54, 23);
+            SpecieFilter.Size = new Size(58, 23);
             SpecieFilter.TabIndex = 14;
             SpecieFilter.Text = "Especie";
             SpecieFilter.UseVisualStyleBackColor = true;
@@ -428,7 +430,7 @@
             // 
             PrizeFilter.Cursor = Cursors.Hand;
             PrizeFilter.FlatStyle = FlatStyle.Flat;
-            PrizeFilter.Location = new Point(71, 33);
+            PrizeFilter.Location = new Point(77, 33);
             PrizeFilter.Name = "PrizeFilter";
             PrizeFilter.Size = new Size(53, 23);
             PrizeFilter.TabIndex = 15;

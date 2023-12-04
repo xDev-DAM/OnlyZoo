@@ -50,17 +50,16 @@ namespace OnlyZooXDEV
 
         private void RegistrateLinkLabel_LinkClicked(object? sender, LinkLabelLinkClickedEventArgs e)
         {
-            RegistroForm registroForm = new RegistroForm();
-            registroForm.ShowDialog(this);
-            this.Hide();
+            this.Visible = false;
+            new RegistroForm().ShowDialog(this);
         }
         private void IniciarSesionButton_Click(object? sender, EventArgs e)
         {
-           
+
             if (string.IsNullOrEmpty(this.TextBoxUsuario.Text) || string.IsNullOrEmpty(this.TexBoxContrasena.Text))
             {
                 MostrarAlerta("Por favor, complete todos los campos.");
-                return; 
+                return;
             }
             MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

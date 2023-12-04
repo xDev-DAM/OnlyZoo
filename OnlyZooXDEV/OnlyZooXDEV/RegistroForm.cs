@@ -51,9 +51,9 @@ namespace OnlyZooXDEV
 
         private void IniciaSesionLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            IniciarSesionForm f = this.Owner as IniciarSesionForm?? new();
-            this.Hide();
-            f.ShowDialog();
+            IniciarSesionForm f = this.Owner as IniciarSesionForm ?? new();
+            this.Visible = false;
+            f.Visible = true;
         }
         private void RegistrarButton_Click(object? sender, EventArgs e)
         {

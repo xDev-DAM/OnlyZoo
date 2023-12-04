@@ -88,6 +88,7 @@
             // IniciaSesionLinkLabel
             // 
             IniciaSesionLinkLabel.AutoSize = true;
+            IniciaSesionLinkLabel.Cursor = Cursors.Hand;
             IniciaSesionLinkLabel.LinkColor = Color.DimGray;
             IniciaSesionLinkLabel.Location = new Point(199, 317);
             IniciaSesionLinkLabel.Name = "IniciaSesionLinkLabel";
@@ -107,12 +108,15 @@
             // 
             // RegitroButton
             // 
+            RegitroButton.BackColor = Color.White;
+            RegitroButton.Cursor = Cursors.Hand;
+            RegitroButton.FlatStyle = FlatStyle.Flat;
             RegitroButton.Location = new Point(143, 274);
             RegitroButton.Name = "RegitroButton";
             RegitroButton.Size = new Size(90, 40);
             RegitroButton.TabIndex = 8;
             RegitroButton.Text = "Registrate";
-            RegitroButton.UseVisualStyleBackColor = true;
+            RegitroButton.UseVisualStyleBackColor = false;
             // 
             // TexBoxContrasena
             // 
@@ -190,6 +194,7 @@
             ClientSize = new Size(384, 461);
             Controls.Add(PanelBot);
             Controls.Add(PanelTop);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "RegistroForm";
