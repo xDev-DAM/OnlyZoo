@@ -67,6 +67,7 @@
             catálogoDeMerchandaingToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             bindingSource1 = new BindingSource(components);
+            IniciarSesionButton = new Button();
             TopPanel.SuspendLayout();
             TopTitlePanel.SuspendLayout();
             TopLeftPanel.SuspendLayout();
@@ -102,6 +103,7 @@
             TopTitlePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 62.9554672F));
             TopTitlePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 176F));
             TopTitlePanel.Controls.Add(OnlyZooLabel, 1, 0);
+            TopTitlePanel.Controls.Add(IniciarSesionButton, 2, 0);
             TopTitlePanel.Dock = DockStyle.Fill;
             TopTitlePanel.Location = new Point(334, 0);
             TopTitlePanel.Name = "TopTitlePanel";
@@ -479,6 +481,18 @@
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
+            // IniciarSesionButton
+            // 
+            IniciarSesionButton.BackColor = Color.White;
+            IniciarSesionButton.Dock = DockStyle.Fill;
+            IniciarSesionButton.Location = new Point(621, 3);
+            IniciarSesionButton.Name = "IniciarSesionButton";
+            IniciarSesionButton.Size = new Size(171, 51);
+            IniciarSesionButton.TabIndex = 3;
+            IniciarSesionButton.Text = "Iniciar Sesion";
+            IniciarSesionButton.UseVisualStyleBackColor = false;
+            IniciarSesionButton.Click += IniciarSesionButton_Click;
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -551,5 +565,6 @@
         private PictureBox LogoXdev;
         private PictureBox OnlyZooLogo;
         private Label CopyRightLabel;
+        private Button IniciarSesionButton;
     }
 }

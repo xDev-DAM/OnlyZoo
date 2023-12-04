@@ -17,6 +17,7 @@ namespace OnlyZooXDEV
         {
             InitializeComponent();
             InitializeEvents();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void InitializeEvents()
@@ -79,6 +80,12 @@ namespace OnlyZooXDEV
             b.BackgroundImageLayout = ImageLayout.Stretch;
             b.TextAlign = ContentAlignment.BottomCenter;
             b.Parent = this.ItemContainer;
+        }
+
+        private void IniciarSesionButton_Click(object sender, EventArgs e)
+        {
+            IniciarSesionForm iniciarSesionForm = new IniciarSesionForm();
+            iniciarSesionForm.ShowDialog();
         }
     }
 }
