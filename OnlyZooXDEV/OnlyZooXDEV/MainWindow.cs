@@ -30,6 +30,7 @@ namespace OnlyZooXDEV
         {
             LoadFonts(new FontManager());
             LoadColors();
+            LoadItems();
         }
 
         private void LoadFonts(FontManager f)
@@ -55,6 +56,21 @@ namespace OnlyZooXDEV
             this.SpecieFilter.BackColor = Color.White;
             this.MainPanel.BackColor = ColorManager.GetPaletteColor3();
             this.MainBotPanel.BackColor = ColorManager.GetPaletteColor1();
+        }
+        // una prueba para medidas!
+        private void LoadItems() {
+            for (int i = 0; i < 50; i++)
+            {
+                CreateButton();
+            }
+        }
+
+        private void CreateButton()
+        {
+            Button b = new Button();
+            b.Size = new Size(210, 210);
+            b.Margin = new Padding(20, 20, 3, 3);
+            b.Parent = this.ItemContainer;
         }
     }
 }
