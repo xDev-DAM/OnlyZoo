@@ -103,6 +103,8 @@
             // 
             // BuyButton
             // 
+            BuyButton.Cursor = Cursors.Hand;
+            BuyButton.FlatStyle = FlatStyle.Flat;
             BuyButton.Location = new Point(30, 20);
             BuyButton.Margin = new Padding(30, 20, 3, 3);
             BuyButton.Name = "BuyButton";
@@ -113,6 +115,8 @@
             // 
             // ReportButton
             // 
+            ReportButton.Cursor = Cursors.Hand;
+            ReportButton.FlatStyle = FlatStyle.Flat;
             ReportButton.Location = new Point(131, 20);
             ReportButton.Margin = new Padding(10, 20, 3, 3);
             ReportButton.Name = "ReportButton";

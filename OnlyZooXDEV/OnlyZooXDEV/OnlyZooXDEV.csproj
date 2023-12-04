@@ -30,6 +30,9 @@
     <None Update="font\Roboto-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="image\ejemplo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="image\onlyzoo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
