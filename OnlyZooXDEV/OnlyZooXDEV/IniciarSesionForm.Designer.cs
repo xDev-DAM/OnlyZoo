@@ -80,6 +80,7 @@
             // RegistrateLinkLabel
             // 
             RegistrateLinkLabel.AutoSize = true;
+            RegistrateLinkLabel.Cursor = Cursors.Hand;
             RegistrateLinkLabel.LinkColor = Color.DimGray;
             RegistrateLinkLabel.Location = new Point(224, 302);
             RegistrateLinkLabel.Name = "RegistrateLinkLabel";
@@ -87,7 +88,6 @@
             RegistrateLinkLabel.TabIndex = 21;
             RegistrateLinkLabel.TabStop = true;
             RegistrateLinkLabel.Text = "Registrate";
-            RegistrateLinkLabel.LinkClicked += RegistrateLinkLabel_LinkClicked;
             // 
             // RegistrateLabel
             // 
@@ -100,12 +100,15 @@
             // 
             // IniciarSesionButton
             // 
+            IniciarSesionButton.BackColor = Color.White;
+            IniciarSesionButton.Cursor = Cursors.Hand;
+            IniciarSesionButton.FlatStyle = FlatStyle.Flat;
             IniciarSesionButton.Location = new Point(119, 247);
             IniciarSesionButton.Name = "IniciarSesionButton";
             IniciarSesionButton.Size = new Size(138, 40);
             IniciarSesionButton.TabIndex = 19;
             IniciarSesionButton.Text = "Iniciar Sesion";
-            IniciarSesionButton.UseVisualStyleBackColor = true;
+            IniciarSesionButton.UseVisualStyleBackColor = false;
             // 
             // TexBoxContrasena
             // 
@@ -149,6 +152,7 @@
             ClientSize = new Size(384, 461);
             Controls.Add(PanelBot);
             Controls.Add(PanelTop);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "IniciarSesionForm";
