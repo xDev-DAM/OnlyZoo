@@ -58,18 +58,26 @@ namespace OnlyZooXDEV
             this.MainBotPanel.BackColor = ColorManager.GetPaletteColor1();
         }
         // una prueba para medidas!
-        private void LoadItems() {
+        private void LoadItems()
+        {
             for (int i = 0; i < 50; i++)
             {
-                CreateButton();
+                CreateItem();
             }
         }
 
-        private void CreateButton()
+        private void CreateItem()
         {
             Button b = new Button();
             b.Size = new Size(210, 210);
             b.Margin = new Padding(20, 20, 3, 3);
+            b.Cursor = Cursors.Hand;
+            b.Text = "Ejemplo";
+            b.FlatStyle = FlatStyle.Popup;
+            Image myimage = new Bitmap("image/ejemplo.jpg");
+            b.BackgroundImage = myimage;
+            b.BackgroundImageLayout = ImageLayout.Stretch;
+            b.TextAlign = ContentAlignment.BottomCenter;
             b.Parent = this.ItemContainer;
         }
     }

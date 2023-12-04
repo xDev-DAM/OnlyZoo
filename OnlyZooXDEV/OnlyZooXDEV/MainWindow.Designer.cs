@@ -135,6 +135,8 @@
             // 
             // ProductsButton
             // 
+            ProductsButton.Cursor = Cursors.Hand;
+            ProductsButton.FlatStyle = FlatStyle.Flat;
             ProductsButton.Location = new Point(3, 8);
             ProductsButton.Margin = new Padding(3, 8, 3, 3);
             ProductsButton.Name = "ProductsButton";
@@ -145,6 +147,8 @@
             // 
             // PetButton
             // 
+            PetButton.Cursor = Cursors.Hand;
+            PetButton.FlatStyle = FlatStyle.Flat;
             PetButton.Location = new Point(89, 8);
             PetButton.Margin = new Padding(3, 8, 3, 3);
             PetButton.Name = "PetButton";
@@ -155,6 +159,8 @@
             // 
             // MerchButton
             // 
+            MerchButton.Cursor = Cursors.Hand;
+            MerchButton.FlatStyle = FlatStyle.Flat;
             MerchButton.Location = new Point(170, 8);
             MerchButton.Margin = new Padding(3, 8, 3, 3);
             MerchButton.Name = "MerchButton";
@@ -165,6 +171,8 @@
             // 
             // FeaturedButton
             // 
+            FeaturedButton.Cursor = Cursors.Hand;
+            FeaturedButton.FlatStyle = FlatStyle.Flat;
             FeaturedButton.Location = new Point(251, 8);
             FeaturedButton.Margin = new Padding(3, 8, 3, 3);
             FeaturedButton.Name = "FeaturedButton";
@@ -185,6 +193,8 @@
             // 
             // ProfileButton
             // 
+            ProfileButton.Cursor = Cursors.Hand;
+            ProfileButton.FlatStyle = FlatStyle.Flat;
             ProfileButton.Image = (Image)resources.GetObject("ProfileButton.Image");
             ProfileButton.Location = new Point(9, 8);
             ProfileButton.Margin = new Padding(3, 8, 10, 3);
@@ -339,11 +349,13 @@
             // 
             // SearchButton
             // 
+            SearchButton.Cursor = Cursors.Hand;
+            SearchButton.FlatStyle = FlatStyle.Flat;
             SearchButton.Location = new Point(174, 31);
             SearchButton.Name = "SearchButton";
             SearchButton.Size = new Size(63, 23);
             SearchButton.TabIndex = 19;
-            SearchButton.Text = "search";
+            SearchButton.Text = "buscar";
             SearchButton.UseVisualStyleBackColor = true;
             // 
             // SearchLabel
@@ -378,6 +390,8 @@
             // 
             // StockFilter
             // 
+            StockFilter.Cursor = Cursors.Hand;
+            StockFilter.FlatStyle = FlatStyle.Flat;
             StockFilter.Location = new Point(3, 33);
             StockFilter.Name = "StockFilter";
             StockFilter.Size = new Size(62, 23);
@@ -387,6 +401,8 @@
             // 
             // SpecieFilter
             // 
+            SpecieFilter.Cursor = Cursors.Hand;
+            SpecieFilter.FlatStyle = FlatStyle.Flat;
             SpecieFilter.Location = new Point(132, 33);
             SpecieFilter.Margin = new Padding(3, 3, 10, 3);
             SpecieFilter.Name = "SpecieFilter";
@@ -397,6 +413,8 @@
             // 
             // PrizeFilter
             // 
+            PrizeFilter.Cursor = Cursors.Hand;
+            PrizeFilter.FlatStyle = FlatStyle.Flat;
             PrizeFilter.Location = new Point(71, 33);
             PrizeFilter.Name = "PrizeFilter";
             PrizeFilter.Size = new Size(53, 23);
