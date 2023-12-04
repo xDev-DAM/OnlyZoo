@@ -33,6 +33,7 @@
             TopPanel = new Panel();
             TopTitlePanel = new TableLayoutPanel();
             OnlyZooLabel = new Label();
+            IniciarSesionButton = new Button();
             TopLeftPanel = new FlowLayoutPanel();
             ProductsButton = new Button();
             PetButton = new Button();
@@ -67,7 +68,6 @@
             catálogoDeMerchandaingToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             bindingSource1 = new BindingSource(components);
-            IniciarSesionButton = new Button();
             TopPanel.SuspendLayout();
             TopTitlePanel.SuspendLayout();
             TopLeftPanel.SuspendLayout();
@@ -122,6 +122,17 @@
             OnlyZooLabel.Size = new Size(90, 30);
             OnlyZooLabel.TabIndex = 2;
             OnlyZooLabel.Text = "OnlyZoo";
+            // 
+            // IniciarSesionButton
+            // 
+            IniciarSesionButton.Anchor = AnchorStyles.None;
+            IniciarSesionButton.BackColor = Color.White;
+            IniciarSesionButton.Location = new Point(635, 8);
+            IniciarSesionButton.Name = "IniciarSesionButton";
+            IniciarSesionButton.Size = new Size(143, 41);
+            IniciarSesionButton.TabIndex = 3;
+            IniciarSesionButton.Text = "Iniciar Sesion";
+            IniciarSesionButton.UseVisualStyleBackColor = false;
             // 
             // TopLeftPanel
             // 
@@ -480,18 +491,6 @@
             menuStrip1.Size = new Size(43, 24);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
-            // 
-            // IniciarSesionButton
-            // 
-            IniciarSesionButton.BackColor = Color.White;
-            IniciarSesionButton.Dock = DockStyle.Fill;
-            IniciarSesionButton.Location = new Point(621, 3);
-            IniciarSesionButton.Name = "IniciarSesionButton";
-            IniciarSesionButton.Size = new Size(171, 51);
-            IniciarSesionButton.TabIndex = 3;
-            IniciarSesionButton.Text = "Iniciar Sesion";
-            IniciarSesionButton.UseVisualStyleBackColor = false;
-            IniciarSesionButton.Click += IniciarSesionButton_Click;
             // 
             // MainWindow
             // 

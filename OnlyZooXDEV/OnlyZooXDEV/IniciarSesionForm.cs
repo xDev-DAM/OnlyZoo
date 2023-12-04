@@ -15,17 +15,19 @@ namespace OnlyZooXDEV
     {
         public IniciarSesionForm()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             InitializeEvents();
-            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void InitializeEvents()
         {
             this.Load -= new System.EventHandler(LoadForm);
             this.IniciarSesionButton.Click -= new System.EventHandler(IniciarSesionButton_Click);
+            this.RegistrateLinkLabel.LinkClicked -= new System.Windows.Forms.LinkLabelLinkClickedEventHandler(RegistrateLinkLabel_LinkClicked);
 
             this.Load += new System.EventHandler(LoadForm);
             this.IniciarSesionButton.Click += new System.EventHandler(IniciarSesionButton_Click);
+            this.RegistrateLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(RegistrateLinkLabel_LinkClicked);
         }
         private void LoadForm(object? sender, EventArgs e)
         {
@@ -46,13 +48,13 @@ namespace OnlyZooXDEV
             this.PanelBot.BackColor = ColorManager.GetPaletteColor1();
         }
 
-        private void RegistrateLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void RegistrateLinkLabel_LinkClicked(object? sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
             RegistroForm registroForm = new RegistroForm();
-            registroForm.ShowDialog();
+            registroForm.ShowDialog(this);
+            this.Hide();
         }
-        private void IniciarSesionButton_Click(object sender, EventArgs e)
+        private void IniciarSesionButton_Click(object? sender, EventArgs e)
         {
            
             if (string.IsNullOrEmpty(this.TextBoxUsuario.Text) || string.IsNullOrEmpty(this.TexBoxContrasena.Text))

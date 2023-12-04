@@ -95,7 +95,6 @@
             IniciaSesionLinkLabel.TabIndex = 10;
             IniciaSesionLinkLabel.TabStop = true;
             IniciaSesionLinkLabel.Text = "Iniciar Sesion";
-            IniciaSesionLinkLabel.LinkClicked += IniciaSesionLinkLabel_LinkClicked;
             // 
             // IniciaSesionLabel
             // 

@@ -1,4 +1,5 @@
 ﻿using OnlyZooXDEV.utils;
+using Shipwreck.connector;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,8 +24,10 @@ namespace OnlyZooXDEV
         private void InitializeEvents()
         {
             this.Load -= new System.EventHandler(LoadForm);
+            this.IniciarSesionButton.Click -= new System.EventHandler(IniciarSesionButton_Click);
 
             this.Load += new System.EventHandler(LoadForm);
+            this.IniciarSesionButton.Click += new System.EventHandler(IniciarSesionButton_Click);
         }
 
         private void LoadForm(object? sender, EventArgs e)
@@ -82,7 +85,7 @@ namespace OnlyZooXDEV
             b.Parent = this.ItemContainer;
         }
 
-        private void IniciarSesionButton_Click(object sender, EventArgs e)
+        private void IniciarSesionButton_Click(object? sender, EventArgs e)
         {
             IniciarSesionForm iniciarSesionForm = new IniciarSesionForm();
             iniciarSesionForm.ShowDialog();

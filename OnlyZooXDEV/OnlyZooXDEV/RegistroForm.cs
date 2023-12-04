@@ -15,17 +15,19 @@ namespace OnlyZooXDEV
     {
         public RegistroForm()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             InitializeEvents();
-            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void InitializeEvents()
         {
             this.Load -= new System.EventHandler(LoadForm);
             this.RegitroButton.Click -= new System.EventHandler(RegistrarButton_Click);
+            this.IniciaSesionLinkLabel.LinkClicked -= new System.Windows.Forms.LinkLabelLinkClickedEventHandler(IniciaSesionLinkLabel_LinkClicked);
 
             this.Load += new System.EventHandler(LoadForm);
             this.RegitroButton.Click += new System.EventHandler(RegistrarButton_Click);
+            this.IniciaSesionLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(IniciaSesionLinkLabel_LinkClicked);
         }
         private void LoadForm(object? sender, EventArgs e)
         {
@@ -49,11 +51,11 @@ namespace OnlyZooXDEV
 
         private void IniciaSesionLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            IniciarSesionForm f = this.Owner as IniciarSesionForm?? new();
             this.Hide();
-            IniciarSesionForm iniciarSesionForm = new IniciarSesionForm();
-            iniciarSesionForm.ShowDialog();
+            f.ShowDialog();
         }
-        private void RegistrarButton_Click(object sender, EventArgs e)
+        private void RegistrarButton_Click(object? sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(this.TextBoxNombreCompleto.Text) ||
                 string.IsNullOrEmpty(this.TextBoxUsuario.Text) ||

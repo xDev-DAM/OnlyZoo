@@ -87,7 +87,6 @@
             RegistrateLinkLabel.TabIndex = 21;
             RegistrateLinkLabel.TabStop = true;
             RegistrateLinkLabel.Text = "Registrate";
-            RegistrateLinkLabel.LinkClicked += RegistrateLinkLabel_LinkClicked;
             // 
             // RegistrateLabel
             // 
