@@ -15,6 +15,7 @@ namespace OnlyZooXDEV
     {
         public ItemDetailForm()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             InitializeEvents();
         }

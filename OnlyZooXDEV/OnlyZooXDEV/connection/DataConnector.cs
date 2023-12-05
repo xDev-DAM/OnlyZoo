@@ -16,26 +16,23 @@ namespace Shipwreck.connector
         {
             connectionString = $"server={AppConstants.HOST}; port={AppConstants.PORT}; uid={AppConstants.USER}; " +
                 $"pwd={AppConstants.PASSWORD}; database={AppConstants.DATABASE}";
+            connection = new MySqlConnection(connectionString);
         }
 
-        public bool EstablishConnection()
+        public MySqlConnection GetConnection()
         {
-            connection = new MySqlConnection(connectionString);
             try
             {
                 if (connection.State != System.Data.ConnectionState.Open)
                 {
                     connection.Open();
-                    MessageBox.Show("ok");
-                    return true;
                 }
-                return false;
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                return false;
             }
+            return connection;
         }
     }
 }

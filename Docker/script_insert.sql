@@ -41,13 +41,13 @@ VALUES('Bronce','Nuestro plan más humilde para bolsillos rotos, recibirás ofer
 ALTER TABLE producto DROP COLUMN ALIAS;
 
 INSERT INTO producto(nombre,descripcion,id_especie,stock,precio,imagen) 
-VALUES('Saco de comida para pájaros','20 kilos de sabrosura para tus aves',1,5,35.99,'images/product/sacoave.jpg'),
-('Pienso para perros famélicos','30 kilos de sabrosura para tus perros flacos',3,55,58.99,'images/product/sacoperro.jpg'),
-('Croquetas para felinos esterilizados','20 kilos de sabrosura para gatitos capados',4,100,12.99,'images/product/sacogato.jpg'),
-('Correa estranguladora','ahorca a tu mascota con estilo',3,20,23.43,'images/product/correa.jpg'),
-('Juguete para gatos','juega con tu gato con este plumero super fantastico',4,78,5.99,'images/product/juguete.jpg'),
-('Planta para acuario','Amenízale la existencia a tu infeliz pescado con esta platita',2,45,13.23,'images/product/planta.jpg'),
-('Saquito comida pez','Rico alimento para peces y pececitos',2,45,22.23,'images/product/sacopez.jpg');
+VALUES('Saco de comida para pájaros','20 kilos de sabrosura para tus aves',1,5,35.99,'image/product/sacoave.jpg'),
+('Pienso para perros famélicos','30 kilos de sabrosura para tus perros flacos',3,55,58.99,'image/product/sacoperro.jpg'),
+('Croquetas para felinos esterilizados','20 kilos de sabrosura para gatitos capados',4,100,12.99,'image/product/sacogato.jpg'),
+('Correa estranguladora','ahorca a tu mascota con estilo',3,20,23.43,'image/product/correa.jpg'),
+('Juguete para gatos','juega con tu gato con este plumero super fantastico',4,78,5.99,'image/product/juguete.jpg'),
+('Planta para acuario','Amenízale la existencia a tu infeliz pescado con esta platita',2,45,13.23,'image/product/planta.jpg'),
+('Saquito comida pez','Rico alimento para peces y pececitos',2,45,22.23,'image/product/sacopez.jpg');
 
 -- insert into usuario
 

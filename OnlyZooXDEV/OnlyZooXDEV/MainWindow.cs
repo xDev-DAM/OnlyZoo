@@ -1,4 +1,6 @@
-﻿using OnlyZooXDEV.utils;
+﻿using OnlyZoo.model;
+using OnlyZooXDEV.connection;
+using OnlyZooXDEV.utils;
 using Shipwreck.connector;
 using System;
 using System.Collections.Generic;
@@ -16,9 +18,9 @@ namespace OnlyZooXDEV
     {
         public MainWindow()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             InitializeEvents();
-            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void InitializeEvents()
@@ -64,25 +66,31 @@ namespace OnlyZooXDEV
         // una prueba para medidas!
         private void LoadItems()
         {
-            for (int i = 0; i < 50; i++)
-            {
-                CreateItem();
-            }
+            ProductConnector._instance.LoadListFromDatabase();
+            ProductConnector._instance.products.Products.ForEach(prod => {
+                CreateItem(prod);
+            });
         }
 
-        private void CreateItem()
+        private void CreateItem(Product p)
         {
             Button b = new Button();
             b.Size = new Size(210, 210);
             b.Margin = new Padding(20, 20, 3, 3);
             b.Cursor = Cursors.Hand;
-            b.Text = "Ejemplo";
+            b.Text = p.Name;
             b.FlatStyle = FlatStyle.Popup;
-            Image myimage = new Bitmap("image/ejemplo.jpg");
+            Image myimage = new Bitmap(p.Image);
             b.BackgroundImage = myimage;
             b.BackgroundImageLayout = ImageLayout.Stretch;
             b.TextAlign = ContentAlignment.BottomCenter;
+            b.Click += new System.EventHandler(ItemClicked);
             b.Parent = this.ItemContainer;
+        }
+
+        private void ItemClicked(object? sender, EventArgs e)
+        {
+            new ItemDetailForm().ShowDialog(this);
         }
 
         private void IniciarSesionButton_Click(object? sender, EventArgs e)
