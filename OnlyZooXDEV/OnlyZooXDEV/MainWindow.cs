@@ -1,5 +1,6 @@
 ﻿using OnlyZoo.model;
 using OnlyZooXDEV.connection;
+using OnlyZooXDEV.model;
 using OnlyZooXDEV.utils;
 using Shipwreck.connector;
 using System;
@@ -16,27 +17,37 @@ namespace OnlyZooXDEV
 {
     public partial class MainWindow : Form
     {
+        ItemLoader loader;
         public MainWindow()
         {
             this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             InitializeEvents();
+            loader = new ItemLoader(this);
         }
 
         private void InitializeEvents()
         {
             this.Load -= new System.EventHandler(LoadForm);
             this.IniciarSesionButton.Click -= new System.EventHandler(IniciarSesionButton_Click);
+            this.ProductsButton.Click -= new System.EventHandler(LoaderButton_Click);
+            this.MerchButton.Click -= new System.EventHandler(LoaderButton_Click);
+            this.PetButton.Click -= new System.EventHandler(LoaderButton_Click);
 
             this.Load += new System.EventHandler(LoadForm);
             this.IniciarSesionButton.Click += new System.EventHandler(IniciarSesionButton_Click);
+            this.ProductsButton.Click += new System.EventHandler(LoaderButton_Click);
+            this.MerchButton.Click += new System.EventHandler(LoaderButton_Click);
+            this.PetButton.Click += new System.EventHandler(LoaderButton_Click);
         }
+
+
 
         private void LoadForm(object? sender, EventArgs e)
         {
             LoadFonts(new FontManager());
             LoadColors();
-            LoadItems();
+            loader.LoadProducts();
         }
 
         private void LoadFonts(FontManager f)
@@ -63,33 +74,10 @@ namespace OnlyZooXDEV
             this.MainPanel.BackColor = ColorManager.GetPaletteColor3();
             this.MainBotPanel.BackColor = ColorManager.GetPaletteColor1();
         }
-        // una prueba para medidas!
-        private void LoadItems()
-        {
-            ProductConnector._instance.LoadListFromDatabase();
-            ProductConnector._instance.products.Products.ForEach(prod => {
-                CreateItem(prod);
-            });
-        }
 
-        private void CreateItem(Product p)
-        {
-            Button b = new Button();
-            b.Size = new Size(210, 210);
-            b.Margin = new Padding(20, 20, 3, 3);
-            b.Cursor = Cursors.Hand;
-            b.Text = p.Name;
-            b.Font = new FontManager().SmallFont();
-            b.FlatStyle = FlatStyle.Popup;
-            Image myimage = new Bitmap(p.Image);
-            b.BackgroundImage = myimage;
-            b.BackgroundImageLayout = ImageLayout.Stretch;
-            b.TextAlign = ContentAlignment.BottomCenter;
-            b.Click += new System.EventHandler(ItemClicked);
-            b.Parent = this.ItemContainer;
-        }
+     
 
-        private void ItemClicked(object? sender, EventArgs e)
+        public void ItemClicked(object? sender, EventArgs e)
         {
             new ItemDetailForm().ShowDialog(this);
         }
@@ -98,6 +86,14 @@ namespace OnlyZooXDEV
         {
             IniciarSesionForm iniciarSesionForm = new IniciarSesionForm();
             iniciarSesionForm.ShowDialog();
+        }
+
+        private void LoaderButton_Click(object? sender, EventArgs e)
+        {
+            if ((sender as Button).Text.Equals("Productos")) loader.LoadProducts();
+            if ((sender as Button).Text.Equals("Mascotas")) loader.LoadPets();
+            if ((sender as Button).Text.Equals("Merch")) loader.LoadMerch();
+            
         }
     }
 }

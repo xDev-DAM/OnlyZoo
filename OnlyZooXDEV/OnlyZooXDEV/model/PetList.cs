@@ -8,15 +8,11 @@ namespace OnlyZoo.model
 {
     internal class PetList
     {
-        private List<Pet> Pets { get; set;}
+        public List<Pet> Pets { get; set;}
 
-        public PetList(List<Pet> Pets) {
-            this.Pets = Pets;
-            if (this.Pets == null) {
-                this.Pets = new();
-            }        
+        public PetList() {
+            this.Pets = new();        
         }
-
         public bool AddProd(Pet p)
         {
             if (!Pets.Contains(p))
