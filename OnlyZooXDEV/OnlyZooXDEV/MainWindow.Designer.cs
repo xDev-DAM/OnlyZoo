@@ -554,7 +554,6 @@
         private Button PetButton;
         private Button MerchButton;
         private TableLayoutPanel TitlePanel;
-        private Label TitleLabel;
         private TableLayoutPanel TopTitlePanel;
         private Label OnlyZooLabel;
         private Label BotSeparatorLabel;
@@ -567,5 +566,6 @@
         private Label CopyRightLabel;
         private Button IniciarSesionButton;
         public FlowLayoutPanel ItemContainer;
+        public Label TitleLabel;
     }
 }

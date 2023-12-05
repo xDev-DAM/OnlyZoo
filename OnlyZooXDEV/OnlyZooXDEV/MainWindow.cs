@@ -1,17 +1,5 @@
-﻿using OnlyZoo.model;
-using OnlyZooXDEV.connection;
-using OnlyZooXDEV.model;
-using OnlyZooXDEV.utils;
-using Shipwreck.connector;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using OnlyZooXDEV.utils;
+
 
 namespace OnlyZooXDEV
 {
@@ -40,8 +28,6 @@ namespace OnlyZooXDEV
             this.MerchButton.Click += new System.EventHandler(LoaderButton_Click);
             this.PetButton.Click += new System.EventHandler(LoaderButton_Click);
         }
-
-
 
         private void LoadForm(object? sender, EventArgs e)
         {
@@ -75,8 +61,6 @@ namespace OnlyZooXDEV
             this.MainBotPanel.BackColor = ColorManager.GetPaletteColor1();
         }
 
-     
-
         public void ItemClicked(object? sender, EventArgs e)
         {
             new ItemDetailForm().ShowDialog(this);
@@ -90,10 +74,10 @@ namespace OnlyZooXDEV
 
         private void LoaderButton_Click(object? sender, EventArgs e)
         {
-            if ((sender as Button).Text.Equals("Productos")) loader.LoadProducts();
-            if ((sender as Button).Text.Equals("Mascotas")) loader.LoadPets();
-            if ((sender as Button).Text.Equals("Merch")) loader.LoadMerch();
-            
+            Button b = sender as Button?? new();
+            if (b.Text.Equals("Productos")) loader.LoadProducts();
+            if (b.Text.Equals("Mascotas")) loader.LoadPets();
+            if (b.Text.Equals("Merch")) loader.LoadMerch();
         }
     }
 }
