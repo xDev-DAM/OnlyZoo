@@ -79,6 +79,7 @@ namespace OnlyZooXDEV
             b.Margin = new Padding(20, 20, 3, 3);
             b.Cursor = Cursors.Hand;
             b.Text = p.Name;
+            b.Font = new FontManager().SmallFont();
             b.FlatStyle = FlatStyle.Popup;
             Image myimage = new Bitmap(p.Image);
             b.BackgroundImage = myimage;
