@@ -1,9 +1,4 @@
 ﻿using OnlyZooXDEV.connection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnlyZooXDEV.utils
 {
@@ -17,6 +12,7 @@ namespace OnlyZooXDEV.utils
         public void LoadProducts()
         {
             Window.ItemContainer.Controls.Clear();
+            Window.TitleLabel.Text = "PRODUCTOS";
             ProductConnector._instance.LoadListFromDatabase();
             ProductConnector._instance.products.Products.ForEach(prod => {
                 CreateItem(prod.Name, prod.Image);
@@ -25,6 +21,7 @@ namespace OnlyZooXDEV.utils
 
         public void LoadPets() {
             Window.ItemContainer.Controls.Clear();
+            Window.TitleLabel.Text = "MASCOTAS";
             PetConnector._instance.LoadListFromDatabase();
             PetConnector._instance.pets.Pets.ForEach(pet => {
                 CreateItem(pet.Name, pet.Image);
@@ -33,6 +30,7 @@ namespace OnlyZooXDEV.utils
 
         public void LoadMerch() {
             Window.ItemContainer.Controls.Clear();
+            Window.TitleLabel.Text = "MERCHANDISING";
             MerchConnector._instance.LoadListFromDatabase();
             MerchConnector._instance.merchs.Merchs.ForEach(merch => {
                 CreateItem(merch.Name, merch.Image);
