@@ -561,11 +561,11 @@
         private BindingSource bindingSource1;
         private Button FeaturedButton;
         private Panel SubMainPanel;
-        private FlowLayoutPanel ItemContainer;
         private FlowLayoutPanel MainBotPanel;
         private PictureBox LogoXdev;
         private PictureBox OnlyZooLogo;
         private Label CopyRightLabel;
         private Button IniciarSesionButton;
+        public FlowLayoutPanel ItemContainer;
     }
 }

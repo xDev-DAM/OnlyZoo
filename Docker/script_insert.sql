@@ -9,7 +9,7 @@ INSERT INTO especie(nombre) VALUES('ave'),('pez'),('perro'),('gato');
 -- insert into mascota
 
 INSERT INTO mascota(nombre,raza,descripcion,id_especie,stock,precio,imagen) 
-VALUES('Loro','Loro de frente naranja','Esta raza de loros son muy simpáticos y sociables',1,10,325.36,'image/pet/loro.jpg'),
+VALUES('Loro','Loro de frente naranja','Esta raza de loros son muy simpáticos y sociables',1,10,325.36,'image/pet/loro.png'),
 ('Camada gatos calvos','sphynx','Camada de simpáticos gatos sin un solo pelo. Despreocúpate de los pelos en el sofá',4,4,499.99,'image/pet/gatocalvo.png'),
 ('Cachorro Setter','Setter inglés','Bonitos cachorros de setter inglés disponibles para cazar o animal de compañía',3,8,450.43,'image/pet/setter.png'),
 ('Pez guppy','Poecilia reticulata','Este pez de agua dulce, proveniente del Caribe, es sin duda uno de los peces de acuario más conocidos. El guppy es considerado fácil de mantener y por lo tanto perfecto para principiantes',2,20,29.43,'image/pet/guppy.png'),

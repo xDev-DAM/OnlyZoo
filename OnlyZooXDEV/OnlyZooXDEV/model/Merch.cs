@@ -1,37 +1,34 @@
-﻿using System;
+﻿using OnlyZoo.model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlyZoo.model
+namespace OnlyZooXDEV.model
 {
-    internal class Pet
+    internal class Merch
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        private string Breed { get; set; }
         private string Description { get; set; }
-        private int idSpecie { get; set; }
         private int Stock { get; set; }
-        public string Image { get; set; }
         private double Prize { get; set; }
-        
-        public Pet(int Id, string Name, string Breed, string Description, int idSpecie, int stock,string Image, double Prize ) {
-            this.Id = Id;
-            this.Name = Name;
-            this.Breed = Breed;
-            this.Description = Description;
-            this.idSpecie = idSpecie;
-            this.Stock = Stock;
-            this.Image = Image;
-            this.Prize = Prize;
-        }
+        public string Image { get; set; }
 
+        public Merch(int Id,string Name,string Descripcion,int Stock,double Prize,string Image)
+        {
+            this.Id = Id;
+            this.Name = Name;  
+            this.Description = Descripcion;
+            this.Stock = Stock;
+            this.Prize = Prize;
+            this.Image = Image;
+        }
         public override bool Equals(object? obj)
         {
-            return obj is Pet pet &&
-                   Id == pet.Id;
+            return obj is Merch merch &&
+                   Id == merch.Id;
         }
 
         public override int GetHashCode()
